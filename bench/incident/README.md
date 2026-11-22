@@ -30,7 +30,7 @@ bash bench/incident/inject.sh on|off|status      # the fault switch on its own
 
 The browser walkthrough was recorded by an automated browser tester: monitor (Alert, both groups) → Related telemetry → Example trace → `postgresql.query` span with the faulty statement → trace logs → cart-service APM page with an Errors spike and `GET /cart/:user` showing 482 errors.
 
-Note: newer OpenTelemetry pg instrumentation redacts database error text on spans, keeping only the SQLSTATE code. The full message ("column "quantity" does not exist") reaches DataCat through the service's error log in the same trace.
+Note: newer OpenTelemetry pg instrumentation redacts database error text on spans, keeping only the SQLSTATE code. The full message ("column 'quantity' does not exist") reaches DataCat through the service's error log in the same trace.
 
 ## Evidence-based correlation
 
