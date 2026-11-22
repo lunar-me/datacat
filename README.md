@@ -48,7 +48,7 @@ DataCat accepts the Datadog public intake API and OTLP/HTTP:
 | Sender | Status |
 | --- | --- |
 | Datadog Agent 7.56.2 (metrics, logs, check runs, traces) | Tested in CI-style runs |
-| Datadog Agent 7.85.4 (metrics, logs, check runs, traces) | Tested with captured payloads; including the newer string-table trace format |
+| Datadog Agent 7.85.4 (metrics, logs, check runs, traces) | Tested with captured payloads, including the newer string-table trace format |
 | Datadog Agent 7.57–7.84 | Not tested individually. Agents that send traces in a format DataCat cannot read get a 422, never a silent 202 |
 | OpenTelemetry Collector / SDKs (OTLP/HTTP) | `/v1/traces`, `/v1/metrics`, `/v1/logs` (also under `/otlp/v1/*`) |
 | DataCat Agent and libraries | Tested in CI |
